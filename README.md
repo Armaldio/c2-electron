@@ -1,2 +1,4 @@
-# c2-electron
-A plugin to allow you to export to electron
+# Electron prebuilt for Construct 2
+A prebuilt version of electron ready for Construct 2 games
+
+TODO : documentation
