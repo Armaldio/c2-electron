@@ -1,0 +1,3 @@
+electron-prebuilt*
+source/node_module
+source/yarn.lock
