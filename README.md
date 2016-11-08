@@ -7,7 +7,7 @@ A prebuilt version of electron ready for Construct 2 games
 *Discord : [Server](https://discord.gg/0eLPLj96B4t3Dpgo)*
 
 ## Setup
-* Download the precompiled electron version and the plugin on the [release page](https://github.com/armaldio/c2-electron-plugin/releases).
+* Download the precompiled electron version and the plugin on the [release page](https://github.com/armaldio/c2-electron/releases).
 You can also download the Electron plugin from the [Plugin Manager](http://armaldio.xyz/plugin-manager/) : 
 [c2pt://armaldio_electron](c2pt://armaldio_electron)
 
@@ -42,12 +42,12 @@ Note : If livereload fail to start, please run `npm install gulp -g && npm insta
 ## Export your game ##
 * Select Kongregate (HTML will not work) and export to **Electron_folder**/ressources/app/www
 *(Never delete the node_module folder.)*
-* Run your game by launching **Electron_folder**/electron-prebuilt-version.exe or just let it reload automatically if you have launched livereload !
+* Run your game by launching **Electron_folder**/electron-prebuilt-{version}.exe or just let it reload automatically if you have launched livereload !
 
 ## Compile electron from source ##
 TODO
 
-## Use specifi Electron version ##
+## Use specific Electron version ##
 TODO
 
-If you have any issue please ask [here](https://github.com/armaldio/c2-electron-plugin/issues)
+If you have any issue please ask [here](https://github.com/armaldio/c2-electron/issues)
