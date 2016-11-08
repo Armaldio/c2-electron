@@ -1,0 +1,3 @@
+[submodule "c2-electron-plugin"]
+	path = c2-electron-plugin
+	url = https://github.com/armaldio/c2-electron-plugin.git
