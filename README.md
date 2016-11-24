@@ -40,8 +40,11 @@ Note : If livereload fail to start, please run `npm install gulp -g && npm insta
 * Run your game
 
 ## Export your game ##
-* Select Kongregate (HTML will not work) and export to **Electron_folder**/ressources/app/www
-*(Never delete the node_module folder.)*
+* Select Kongregate (HTML will not work) and export to **Electron_folder**/ressources/app/www 
+
+Note : Do NOT minify ! (Will be corrected)
+
+* *(Never delete the node_module folder.)*
 * Run your game by launching **Electron_folder**/electron-prebuilt-{version}.exe or just let it reload automatically if you have launched livereload !
 
 ## Compile electron from source ##
