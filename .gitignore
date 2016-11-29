@@ -1,3 +1,4 @@
 electron-prebuilt*
 source/node_modules
 source/yarn.lock
+.idea
