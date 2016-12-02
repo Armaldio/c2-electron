@@ -48,9 +48,7 @@ Note : Do NOT minify ! (Will be corrected)
 * Run your game by launching **Electron_folder**/electron-prebuilt-{version}.exe or just let it reload automatically if you have launched livereload !
 
 ## Compile electron from source ##
-TODO
-
-## Use specific Electron version ##
-TODO
+Using the new `Electron configuration.exe` tool, you can now easily choose your build target (platform and arch), choose basic options about your Window and more to come
+*Note : In order for this tool to work correctly, you need to download Node.js*
 
 If you have any issue please ask [here](https://github.com/armaldio/c2-electron/issues)
