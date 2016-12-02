@@ -1,1 +1,1 @@
-electron-packager . "electron-prebuilt-1.4.8" --platform="win32" --arch="x64" --version=1.4.8 --out="../" --overwrite
+electron-packager . "electron-prebuilt-1.4.10-ia32" --platform="win32" --arch="ia32" --version=1.4.10 --out="../" --overwrite &

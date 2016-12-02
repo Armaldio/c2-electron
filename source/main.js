@@ -9,28 +9,38 @@ const client = require('electron-connect').client;
 const isDev = require('electron-is-dev');
 
 let mainWindow;
+let config;
+let def = true;
 
-let config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")));
+try {
+    fs.accessSync(path.join(__dirname, "config.json"), fs.F_OK);
+	config = JSON.parse(fs.readFileSync(path.join(__dirname, "config.json")));
+	def = false;
+} catch (e) {
+    console.log("No configuration file, back to default settings");
+}
 
 function createWindow() {
 	mainWindow = new BrowserWindow(
 		{
-			width : config.window.width,
-			height: config.window.height,
-			frame : config.window.frame
+			width : (def ? 800 : config.window.width),
+			height: (def ? 600 : config.window.height),
+			frame : (def ? true : config.window.frame),
+			fullscreen : (def ? false : config.window.fullscreen),
 		}
 	);
 
-	console.log(mainWindow);
-
 	mainWindow.loadURL(`file://${__dirname}/www/index.html`);
 
-	if (config.external_tools.show_console_at_start)
+	if ((def ? false : config.developer.show_dev_tools))
 		mainWindow.webContents.openDevTools();
 
 	if (isDev) {
 		console.log('Running in development');
-		client.create(mainWindow);
+		client.create(mainWindow, function()
+		{
+			console.log("Connection established. Starting LiveReload");
+		});
 	} else {
 		console.log('Running in production');
 	}
