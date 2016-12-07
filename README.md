@@ -1,7 +1,7 @@
 # The project have moved !
-[Plugin](https://github.com/C2Electron/c2-plugin)
-[Configuration tool](https://github.com/C2Electron/configuration-tool)
-[Exporter](https://github.com/C2Electron/template)
+- [Plugin](https://github.com/C2Electron/c2-plugin)
+- [Configuration tool](https://github.com/C2Electron/configuration-tool)
+- [Exporter](https://github.com/C2Electron/template)
 
 
 # Electron prebuilt for Construct 2
